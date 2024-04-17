@@ -1,0 +1,96 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    background-color: #eeeeee;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container > h1 {
+    font-size: 2rem;
+    align-self: flex-start;
+}
+
+.container > a {
+    align-self: flex-start;
+}
+
+.container > .button-div {
+    align-self: flex-start;
+}
+
+table {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 50rem;
+}
+
+table > thead > tr > th {
+    padding: 0.2rem 1.2rem;
+    background-color: #757575;
+    color: white;
+}
+
+table > tbody > tr > th,td {
+    text-align: center;
+    padding: 0.5rem 1.2rem;
+    background-color: #ffffff;
+    transition-duration: 0.25s;
+}
+
+table > tbody > tr > td > a {
+    background-color: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+table > tbody > tr:hover > td{
+    background-color: #dbdbdb;
+}
+
+.btn {
+    background-color: #ff5151;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.2rem;
+}
+
+.btn:hover {
+    background-color: #db4646;
+}
+
+.btn.gray {
+    background-color: #757575;
+}
+
+.btn.gray:hover {
+    background-color: #666666;
+}
+
+.inputBtn {
+    background-color: #ff5151;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.2rem;
+}
+
+.inputBtn:hover {
+    background-color: #db4646;
+}

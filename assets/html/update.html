@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시물 수정하기</title>
+    <link rel="stylesheet" href="../public/css/add.css">
+</head>
+<body>
+    <section class="container">
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">게시물 수정하기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>제목</td>
+                        <td><input required name="title" placeholder="제목을 입력해주세요. (최소 2자, 최대 30자)" minlength="2" maxlength="30" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">내용</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea required name="content" placeholder="내용을 입력해주세요. (최대 1000자)" id="textarea" cols="80" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button-div">
+                <a href="#" class="btn gray">뒤로가기</a>
+                <form action="">
+                    <input value="수정완료" class="inputBtn" type="submit">
+                </form>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

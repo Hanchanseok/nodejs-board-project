@@ -1,0 +1,30 @@
+
+    <section class="container">
+        <form action="/post/update/<%= post._id %>?_method=PUT" method="POST">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">게시물 수정하기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>제목</td>
+                        <td><input required name="title" placeholder="제목을 입력해주세요. (최소 2자, 최대 30자)" minlength="2" maxlength="30" type="text" value="<%= post.title %>"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">내용</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea required name="content" placeholder="내용을 입력해주세요. (최대 1000자)" id="textarea" maxlength="1000" cols="80" rows="10"><%= post.content %></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button-div">
+                <a href="/post/<%= post._id %>" class="btn gray">뒤로가기</a>
+                <input value="수정완료" class="inputBtn" type="submit">
+            </div>
+        </form>
+    </section>

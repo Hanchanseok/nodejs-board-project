@@ -1,0 +1,35 @@
+
+    <section class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>넘버</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>날짜</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%= post._id.toString().slice(-2) %></td>
+                    <td><%= post.title %></td>
+                    <td><%= post.writer %></td>
+                    <td><%= post.createdAt.toDateString() %></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <%= post.content %>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="button-div">
+            <a href="/" class="btn gray">뒤로가기</a>
+            <a href="/post/update/<%= post._id %>" class="btn">수정</a>
+            <form action="/post/delete/<%= post._id %>?_method=DELETE" method="POST">
+                <input value="삭제" class="inputBtn" type="submit">
+            </form>
+        </div>
+    </section>

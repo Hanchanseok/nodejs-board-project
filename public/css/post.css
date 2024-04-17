@@ -1,0 +1,14 @@
+@import "./index.css";
+
+.container > .button-div {
+    display: flex;
+    gap: 0.3rem;
+}
+
+table > tbody > tr:hover > td{
+    background-color: #ffffff;
+}
+
+table > tfoot > tr > td {
+    text-align: start;
+}

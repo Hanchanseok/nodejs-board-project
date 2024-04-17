@@ -1,0 +1,64 @@
+@import "./index.css";
+
+.container {
+    padding: 5rem;
+    background-color: #757575;
+    border-radius: 0.75rem;
+}
+
+.container > h1 {
+    align-self: center;
+    background-color: inherit;
+    color: #eeeeee;
+
+    margin-block-start: 0;
+    margin-block-end: 0.8rem;
+}
+
+.container > form {
+    background-color: inherit;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 1rem;
+}
+
+.container > form > label {
+    display: flex;
+    background-color: #757575;
+    flex-direction: column;
+}
+
+.container > form > label > span {
+    font-size: 0.9rem;
+    margin: 0.125rem 0;
+    background-color: #757575;
+    color: #eeeeee;
+}
+.container > form > label > input {
+    border: none;
+    width: 15rem;
+    height: 2rem;
+}
+
+.container > form > ul {
+    background-color: #757575;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.container > form > ul > li {
+    background-color: #757575;
+    list-style: none;
+}
+
+.container > form > ul > li > a {
+    background-color: #757575;
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 0.9rem;
+}
